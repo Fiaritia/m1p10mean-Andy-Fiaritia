@@ -1,0 +1,20 @@
+{
+  "name": "m1p10mean-andy-fiaritia",
+  "version": "1.0.0",
+  "description": "mean project",
+  "private": true,
+  "scripts": {
+    "start": "cd server && npm i && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fiaritia/m1p10mean-Andy-Fiaritia.git"
+  },
+  "author": "andyrazafy-fiaritia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fiaritia/m1p10mean-Andy-Fiaritia/issues"
+  },
+  "homepage": "https://github.com/Fiaritia/m1p10mean-Andy-Fiaritia#readme"
+}
