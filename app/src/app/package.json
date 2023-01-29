@@ -1,11 +1,6 @@
 {
-  "name": "paper-kit-2-angular",
-  "version": "1.5.0",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/creativetimofficial/pk2-angular.git"
-  },
+  "name": "app",
+  "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

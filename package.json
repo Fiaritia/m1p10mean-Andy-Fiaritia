@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Fiaritia/m1p10mean-Andy-Fiaritia/issues"
   },
-  "homepage": "https://github.com/Fiaritia/m1p10mean-Andy-Fiaritia#readme"
+  "homepage": "https://github.com/Fiaritia/m1p10mean-Andy-Fiaritia#readme",
+  "dependencies": {
+    "@ng-bootstrap/ng-bootstrap": "6.0.0"
+  }
 }
