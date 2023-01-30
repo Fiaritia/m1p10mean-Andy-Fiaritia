@@ -1,0 +1,102 @@
+<div class="wrapper">
+    <div class="page-header" style="background-image: url('./assets/img/login-image.jpg');">
+        <div class="filter"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-8 col-sm-12 ml-auto mr-auto">
+                        <div class="card card-register">
+                            <h3 class="title">Inscription</h3>
+                            <form class="register-form">
+                                <label>Nom<span>*</span></label>
+                                <div class="input-group form-group-no-border"
+                                    [ngClass]="{'input-group-focus':focus===true}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="nc-icon nc-badge"></i>
+                                        </span>
+                                    </div>
+
+                                    <input type="text" id="name" class="form-control" placeholder="Nom" (focus)="focus=true"
+                                        (blur)="focus=false" [(ngModel)]="name">
+                                </div>
+                                <label>Prénoms<span>*</span></label>
+                                <div class="input-group form-group-no-border"
+                                    [ngClass]="{'input-group-focus':focus===true}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="nc-icon nc-badge"></i>
+                                        </span>
+                                    </div>
+
+                                    <input type="text" id="firstname" class="form-control" placeholder="Prénoms" (focus)="focus=true"
+                                        (blur)="focus=false" [(ngModel)]="firstname">
+                                </div>
+
+                                <label>Email<span>*</span></label>
+                                <div class="input-group form-group-no-border"
+                                    [ngClass]="{'input-group-focus':focus===true}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="nc-icon nc-email-85"></i>
+                                        </span>
+                                    </div>
+
+                                    <input type="text" id="email" class="form-control" placeholder="Email" (focus)="focus=true"
+                                        (blur)="focus=false" [(ngModel)]="email">
+                                </div>
+
+                                <label>Telephone</label>
+                                <div class="input-group form-group-no-border"
+                                    [ngClass]="{'input-group-focus':focus===true}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="nc-icon nc-email-85"></i>
+                                        </span>
+                                    </div>
+
+                                    <input type="text" id="telephone" class="form-control" placeholder="Telephone" (focus)="focus=true"
+                                        (blur)="focus=false">
+                                </div>
+
+                                <label>Mot de passe <span>*</span></label>
+                                <div class="input-group form-group-no-border"
+                                    [ngClass]="{'input-group-focus':focus1===true}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="nc-icon nc-key-25"></i>
+                                        </span>
+                                    </div>
+                                    <input type="password" class="form-control" placeholder="Mot de passe" (focus)="focus1=true"
+                                        (blur)="focus1=false" [(ngModel)]="password1">
+                                </div>
+
+                                <label>Vérification du mot de passe<span>*</span></label>
+                                <div class="input-group form-group-no-border"
+                                    [ngClass]="{'input-group-focus':focus1===true}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="nc-icon nc-key-25"></i>
+                                        </span>
+                                    </div>
+                                    <input type="password" class="form-control" placeholder="Mot de passe" (focus)="focus1=true"
+                                        (blur)="focus1=false" [(ngModel)]="password2">
+                                </div>
+
+                                <div *ngIf="password1 != password2">
+                                    <p style="color:red; margin-top: 20px;">Les mots de passe ne correspondent pas</p>
+                                </div>
+                                <button class="btn btn-danger btn-block btn-round" 
+                                    [disabled]="password1 !== password2 || !email || !name || !firstname || !password1 || !password2">
+                                    S'inscrire
+                                </button>                                <!-- <button class="btn btn-danger btn-block btn-round">Register</button> -->
+                            </form>
+                        </div>
+                        <div class="col text-center" routerLinkActive="active">
+                            <a [routerLink]="['/signin']" class="btn btn-outline-neutral btn-round btn-lg">Connexion</a>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+    </div>
+</div>

@@ -9,6 +9,8 @@ export class SignupComponent implements OnInit {
     test : Date = new Date();
     focus;
     focus1;
+    password;
+    email;
     constructor() { }
 
     ngOnInit() {}

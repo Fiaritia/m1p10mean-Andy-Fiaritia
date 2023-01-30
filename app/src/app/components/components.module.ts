@@ -37,4 +37,10 @@ import { NgbdModalContent } from './modal/modal.component';
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]
 })
-export class ComponentsModule { }
+export class ComponentsModule { 
+    password1: string;
+    password2: string;
+    name: string;
+    firstname: string;
+    email: string;
+}

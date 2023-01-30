@@ -17,6 +17,11 @@ export class ComponentsComponent implements OnInit {
     focus;
     focus1;
     focus2;
+    password1;
+    password2;
+    name;
+    firstname;
+    email;
     date: {year: number, month: number};
     model: NgbDateStruct;
     constructor( private renderer : Renderer2) {}
