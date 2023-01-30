@@ -4,7 +4,7 @@ import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 @Component({
     selector: 'app-modal-content',
     template: `
-    <div class="modal-header">
+    <div class="modal-header">  
         <h5 class="modal-title text-center">Modal title</h5>
         <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
         <span aria-hidden="true">&times;</span>

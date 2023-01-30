@@ -1,0 +1,100 @@
+<div class="wrapper">
+  <div
+    class="page-header"
+    style="background-image: url('./assets/img/login-image.jpg'); opacity: 0.5"
+  >
+      <div class="row">
+        <div cdkDropListGroup>
+          <mat-card
+            class="example-container"
+            style="
+              background-color: rgba(231, 231, 231, 0.979);
+              border-radius: 5px;
+              min-height: 450px;
+              display: inline-block;
+            "
+          >
+            <mat-card-title
+              ><h4 style="text-align: center">A FAIRE</h4></mat-card-title
+            >
+            <mat-card-content>
+              <div
+                cdkDropList
+                [cdkDropListData]="todo"
+                class="example-list"
+                (cdkDropListDropped)="drop($event)"
+              >
+                <div class="example-box" *ngFor="let item of todo" cdkDrag>
+                  {{ item }}
+                </div>
+              </div>
+            </mat-card-content>
+          </mat-card>
+          <mat-card
+            class="example-container"
+            style="
+              background-color: rgba(231, 231, 231, 0.979);
+              border-radius: 5px;
+              min-height: 450px;
+              display: inline-block;
+            "
+          >
+            <mat-card-title
+              ><h4 style="text-align: center">EN COURS</h4></mat-card-title
+            >
+            <mat-card-content>
+              <div
+                cdkDropList
+                [cdkDropListData]="current"
+                class="example-list"
+                (cdkDropListDropped)="drop($event)"
+              >
+                <div class="example-box" *ngFor="let item of current" cdkDrag>
+                  {{ item }}
+                </div>
+              </div>
+            </mat-card-content>
+          </mat-card>
+
+          <mat-card
+            class="example-container"
+            style="
+              background-color: rgba(231, 231, 231, 0.979);
+              border-radius: 5px;
+              min-height: 450px;
+              display: inline-block;
+            "
+          >
+            <mat-card-title
+              ><h4 style="text-align: center">TERMINE</h4></mat-card-title
+            >
+            <mat-card-content>
+              <div
+                cdkDropList
+                [cdkDropListData]="done"
+                class="example-list"
+                (cdkDropLeistDropped)="drop($event)"
+              >
+                <div class="example-box" *ngFor="let item of done" cdkDrag>
+                  {{ item }}
+                </div>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+  </div>
+
+  <div class="col-md-8" style="margin: auto">
+    <h3>Avancement</h3>
+    <ngb-progressbar
+      type="success"
+      class="mt-0"
+      [value]="avancement"
+      [striped]="true"
+      [animated]="true"
+      ><i style="font:bold; font-size: 15px; color:black">{{avancement + "%"}}</i></ngb-progressbar
+    ><br />
+
+  </div>
+</div>

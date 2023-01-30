@@ -11,6 +11,7 @@ import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import {AddvoitureComponent} from './examples/voiture/addvoiture.component';
 import {DepotvoitureComponent} from './examples/voiture/depotvoiture.component';
+import {AddreparationComponent} from './examples/reparation/addreparation.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -21,7 +22,8 @@ const routes: Routes =[
     { path: 'landing',          component: LandingComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
     { path: 'addcar',           component: AddvoitureComponent },
-    { path: 'cardeposit',       component: DepotvoitureComponent}
+    { path: 'cardeposit',       component: DepotvoitureComponent },
+    { path: 'addreparation',    component: AddreparationComponent }
 ];
 
 @NgModule({

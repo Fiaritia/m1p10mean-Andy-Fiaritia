@@ -23,7 +23,7 @@ export class AddreparationComponent implements OnInit {
     constructor() {}
   
     ngOnInit(): void {}
-  
+      
     onFileChange(event) {
       const files = event.target.files;
       if (!files) {
@@ -46,4 +46,5 @@ export class AddreparationComponent implements OnInit {
         const index = this.selectedFiles.indexOf(file);
         this.selectedFiles.splice(index, 1);
       }
+
 }
