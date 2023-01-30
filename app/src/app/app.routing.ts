@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
@@ -9,6 +9,8 @@ import { SignupComponent } from './examples/signup/signup.component';
 import { SigninComponent } from './examples/signin/signin.component';
 import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import {AddvoitureComponent} from './examples/voiture/addvoiture.component';
+import {DepotvoitureComponent} from './examples/voiture/depotvoiture.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -17,7 +19,9 @@ const routes: Routes =[
     { path: 'signin',           component: SignupComponent },
     { path: 'signup',           component: SigninComponent },
     { path: 'landing',          component: LandingComponent },
-    { path: 'nucleoicons',      component: NucleoiconsComponent }
+    { path: 'nucleoicons',      component: NucleoiconsComponent },
+    { path: 'addcar',           component: AddvoitureComponent },
+    { path: 'cardeposit',       component: DepotvoitureComponent}
 ];
 
 @NgModule({
